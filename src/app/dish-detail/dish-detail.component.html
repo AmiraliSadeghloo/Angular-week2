@@ -6,7 +6,7 @@
      fxLayoutGap="10px"
      fxLayoutGap.xs="0">
 
-  <div fxFlex="40">
+  <div fxFlex="30">
     <mat-card>
       <mat-card-header>
         <h1 mat-line> {{dish.name | uppercase}}</h1>
@@ -19,6 +19,8 @@
       <mat-card-actions>
         <button mat-button> LIKE!</button>
         <button mat-button> SHARE</button>
+        <button mat-button (click)="goBack()"> BACK</button>
+
       </mat-card-actions>
 
     </mat-card>
@@ -33,7 +35,6 @@
         <p mat-line>{{dishh.rating}} stars </p>
         <p matline>-- {{dishh.author}} {{dishh.date | date }} </p>
       </mat-card-content>
-
     </mat-list>
   </div>
 
